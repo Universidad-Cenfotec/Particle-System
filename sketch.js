@@ -4,6 +4,7 @@
 
 let n = 50 ;
 var Particles = [];
+const gravity = 0; //cambiar este parámetro a valor >0 para incorporar gravedad
 
 class Particle {
   constructor(x, y, size, sX, sY, elasticity) {
@@ -13,7 +14,7 @@ class Particle {
     this.sX = sX;
     this.sY = sY;
     this.elasticity = elasticity;
-    this.g = 0;
+    this.g = gravity;
   }
 
   display() {
